@@ -1,0 +1,6 @@
+# backups
+*.bak
+#FoxBin2prg
+*.??2
+*_ref.*
+*.app
