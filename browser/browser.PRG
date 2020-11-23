@@ -977,7 +977,18 @@ DO WHILE .T.
 			lcFileName=LOWER(FULLPATH(lcFileName))
 		ENDIF
 		IF NOT FILE(lcFileName)
-			lcFileName=LOWER(FORCEPATH(lcFileName,toBrowser.cProgramPath+"gallery\"))
+*!*	Geändert durch: SF 22.11.2020
+*!*	<pdm>
+*!*	<change date="{^2020-11-22,13:41:00}">Geändert durch: SF<br />
+*!*	Works only if browser.app is located in <expr>HOME(1)</expr>
+*!*	So we set the Path to HOME(1)+"\Gallery\"
+*!*	</change>
+*!*	</pdm>
+
+*			lcFileName=LOWER(FORCEPATH(lcFileName,toBrowser.cProgramPath+"gallery\"))
+			lcFileName=LOWER(FORCEPATH(lcFileName,HOME(1)+"\gallery\"))
+
+*!*	/Geändert durch: SF 22.11.2020
 			IF NOT FILE(lcFileName)
 				toBrowser.cCatalog=""
 				SELECT 0
@@ -1499,7 +1510,18 @@ IF EMPTY(lcClassLibrary)
 	RETURN toBrowser.vResult
 ENDIF
 IF NOT FILE(lcClassLibrary)
-	lcClassLibrary=LOWER(FORCEPATH(lcClassLibrary,toBrowser.cProgramPath+"gallery\"))
+*!*	Geändert durch: SF 22.11.2020
+*!*	<pdm>
+*!*	<change date="{^2020-11-22,13:41:00}">Geändert durch: SF<br />
+*!*	Works only if browser.app is located in <expr>HOME(1)</expr>
+*!*	So we set the Path to HOME(1)+"\Gallery\"
+*!*	</change>
+*!*	</pdm>
+
+*	lcClassLibrary=LOWER(FORCEPATH(lcClassLibrary,toBrowser.cProgramPath+"gallery\"))
+	lcClassLibrary=LOWER(FORCEPATH(lcClassLibrary,HOME(1)+"\gallery\"))
+
+*!*	/Geändert durch: SF 22.11.2020
 	IF NOT FILE(lcClassLibrary)
 		toBrowser.cCatalog=""
 		IF USED(toBrowser.cGallery)
@@ -6432,7 +6454,17 @@ IF tlShow
 	ELSE
 		lcViewCodeFileName=LOWER(toBrowser.cViewCodeFileName)
 		IF EMPTY(lcViewCodeFileName)
-			lcViewCodeFileName=LOWER(toBrowser.cProgramPath+SYS(2015)+".prg")
+*!*	Geändert durch: SF 22.11.2020
+*!*	<pdm>
+*!*	<change date="{^2020-11-22,13:48:00}">Geändert durch: SF<br />
+*!*	cViewCodeFileName does not belong to C:\Programs, moved to HOME(7)
+*!*	</change>
+*!*	</pdm>
+
+*			lcViewCodeFileName=LOWER(toBrowser.cProgramPath+SYS(2015)+".prg")
+			lcViewCodeFileName=LOWER(HOME(7)+SYS(2015)+".prg")
+
+*!*	/Geändert durch: SF 22.11.2020
 		ENDIF
 		IF WEXIST(JUSTFNAME(lcViewCodeFileName))
 			RELEASE WINDOW (JUSTFNAME(lcViewCodeFileName))
