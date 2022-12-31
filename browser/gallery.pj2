@@ -40,14 +40,14 @@ FOR EACH loProject IN _VFP.Projects FOXOBJECT
 ENDFOR
 
 STRTOFILE( '', '__newproject.f2b' )
-BUILD PROJECT gallery.PJX FROM '__newproject.f2b'
+BUILD PROJECT gallery.pjx FROM '__newproject.f2b'
 FOR EACH loProject IN _VFP.Projects FOXOBJECT
 	loProject.Close()
 ENDFOR
 
-MODIFY PROJECT 'gallery.PJX' NOWAIT NOSHOW NOPROJECTHOOK
+MODIFY PROJECT 'gallery.pjx' NOWAIT NOSHOW NOPROJECTHOOK
 
-loProject = _VFP.Projects('gallery.PJX')
+loProject = _VFP.Projects('gallery.pjx')
 
 WITH loProject.FILES
 	.ADD('gallery.prg')		&& *< FileMetadata: Type="P" Cpid="1252" Timestamp="0" ID="0" ObjRev="544" User="" />
@@ -80,7 +80,7 @@ WITH loProject
 ENDWITH
 
 
-_VFP.Projects('gallery.PJX').Close()
+_VFP.Projects('gallery.pjx').Close()
 *ERASE '__newproject.f2b'
 CD (lcCurdir)
 RETURN
