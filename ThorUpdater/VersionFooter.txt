@@ -1,0 +1,6 @@
+
+EndText
+
+Return lcNote
+
+EndProc 

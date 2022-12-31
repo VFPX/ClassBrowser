@@ -33,7 +33,7 @@ _AutoIncrement = "0"
 
 
 *<BuildProj>
-*<.HomeDir = 'e:\se\vfpx\classbrowser\browser' />
+*<.HomeDir = 'c:\visual foxpro\vfpx\classbrowser\browser' />
 
 FOR EACH loProject IN _VFP.Projects FOXOBJECT
 	loProject.Close()
