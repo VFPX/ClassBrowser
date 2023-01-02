@@ -71,10 +71,6 @@ text to lcRegisterWithThor noshow textmerge
 		.Category        = 'Applications'
 		.CanRunAtStartUp = .F.
 
-* Options for this tool
-		.OptionClasses   = 'clsPublicVariableNameProperties' 
-		.OptionTool      = '<<lcAppName>>'
-
 		.Link = ccLink 
 		.Version = ccVERSIONNUMBER 
 
