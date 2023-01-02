@@ -58,7 +58,7 @@ text to lcRegisterWithThor noshow textmerge
 
 * Required properties.
 
-		.PRGName    = 'Thor_Tool_ClassBrowser'
+		.PRGName    = 'Thor_Tool_InstallClassBrowser'
 		.FolderName = '##InstallFolder##'
 		.Prompt     = 'Install Class Browser'
 
