@@ -1,7 +1,7 @@
 Lparameters toUpdateObject
 Local lcDate, ldDate
 
-ldDate = Date(2023, 01, 07)
+ldDate = Date (2023, 01, 07)
 lcDate = Dtoc(ldDate, 1) 
 
 With m.toUpdateObject
