@@ -1,4 +1,4 @@
 appName        = ClassBrowser
 appID          = ClassBrowser
 majorVersion   = 1.01
-versionDATE    = Date(2022, 12, 30)
+versionDATE    = Date(2023, 01, 07
