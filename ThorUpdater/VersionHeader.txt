@@ -137,8 +137,6 @@ Procedure GetToolCode
 	Local lcCode
 
 	Text To m.lcCode Noshow
-	Lparameters lxParam1
-
 	Local llNewExists
 
 	llNewExists = File(ccAppName)
