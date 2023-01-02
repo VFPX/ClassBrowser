@@ -1,6 +1,6 @@
 # Class Browser
 
-Version 1.01 Released 2022-12-30
+Version 1.01 Released 2023-01-07
 
 [What's new in this release](Change%20Log.md)
 
@@ -16,4 +16,4 @@ Class Browser is part of [XSource](https://github.com/VFPX/XSource), the source 
 ## Contribution
 See [contribution](./.github/CONTRIBUTING.md)
 
-Last changed: _2022/12/30 ![Picture](./docs/images/vfpxpoweredby_alternative.gif)
+Last changed: _2023-01-07 ![Picture](./docs/images/vfpxpoweredby_alternative.gif)

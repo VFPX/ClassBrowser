@@ -102,7 +102,7 @@ Procedure GetDescription
 	Local lcDescription
 
 	Text To m.lcDescription Noshow
-Class Browser
+Install Class Browser
 	Endtext
 
 	Return Evl(m.lcDescription, '')

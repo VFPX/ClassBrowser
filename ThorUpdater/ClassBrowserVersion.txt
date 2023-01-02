@@ -1,7 +1,7 @@
 Lparameters toUpdateObject
 Local lcDate, ldDate
 
-ldDate = Date(2022, 12, 30)
+ldDate = Date(2023, 01, 07
 lcDate = Dtoc(ldDate, 1) 
 
 With m.toUpdateObject
@@ -102,7 +102,7 @@ Procedure GetDescription
 	Local lcDescription
 
 	Text To m.lcDescription Noshow
-Class Browser
+Install Class Browser
 	Endtext
 
 	Return Evl(m.lcDescription, '')
@@ -203,9 +203,10 @@ Procedure GetReleaseNotes
 
 Text to lcNote NoShow
 
-### 2022-12-30, Version 1.01
+### 2023-01-07, Version 1.01
 
 * New: If Thor is active, adds classes and class libraries opened into VFP's MRU lists
+* New: Thor tool "Install Class Browser" installs/uninstalls this new version of Class Browser
 
 EndText
 
