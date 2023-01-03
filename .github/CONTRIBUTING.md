@@ -18,10 +18,11 @@ Here are the steps to updating to a new version:
 1. Make whatever changes are necessary.
 ---
 3. In folder _Browser_
+   - Update the version number and date at the top of  _Browser.h_
    - Run FoxBin2Prg to create the text files:
         - `DO foxbin2prg.prg WITH 'BIN2PRG','*.*'`
    - Run _BuildBrowser.prg_ to create the App.
-3. Update the version and date in top few lines and at the very bottom of _ReadMe.md_ 
+3. Update the version and date in the top few lines and at the very bottom of _ReadMe.md_ 
 3. Describe the changes in the top of _Change Log.md_.
 3. In folder _ThorUpdater_:
     - Edit the majorVersion and versionDate settings in _Project.txt_

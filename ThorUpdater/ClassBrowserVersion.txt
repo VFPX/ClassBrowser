@@ -6,9 +6,9 @@ lcDate = Dtoc(ldDate, 1)
 
 With m.toUpdateObject
 	.VersionDate      = m.ldDate
-	.VersionNumber    = '1.01 - ' + lcDate
+	.VersionNumber    = '1.00.01 - ' + lcDate
 
-	.AvailableVersion = 'ClassBrowser-1.01-update-' + lcDate
+	.AvailableVersion = 'ClassBrowser-1.00.01-update-' + lcDate
 	.RegisterWithThor = GetRegisterWithThor(.ApplicationName)
 	.Notes			  = GetReleaseNotes()
 Endwith
@@ -120,7 +120,7 @@ Procedure GetDefineStatements
 #Define ccCurrentApp	_Browser
 
 #Define ccFolderName 	'##InstallFolder##'
-#Define ccAppName		ccFolderName + 'Browser.App'
+#Define ccAppFileName	ccFolderName + 'Browser.App'
 
 	EndText 
 	Return Evl(m.lcDefineStatements, '')
@@ -135,24 +135,24 @@ Procedure GetToolCode
 	Text To m.lcCode Noshow
 	Local llNewExists
 
-	llNewExists = File(ccAppName)
+    	llNewExists = File(ccAppFileName)
 
-	Do Case
-		Case m.llNewExists And Not Upper(ccCurrentApp) == Upper(ccAppName)
-			If Messagebox('Install new version of Class Browser?', 3 + 32) = 6
-				TryToInstall(ccAppName, 'replacement for the')
-			Endif
-		Case m.llNewExists And Upper(ccCurrentApp) == Upper(ccAppName)
-			If Messagebox('Restore default Class Browser?', 3 + 32) = 6
-				TryToInstall(ccDefaultApp, 'default')
-			Endif
-		Case Not Upper(ccCurrentApp) == Upper(ccDefaultApp)
-			If Messagebox('New version not found; restore default Class Browser?', 3 + 32) = 6
-				TryToInstall(ccDefaultApp, 'default')
-			Endif
-		Otherwise
-			Messagebox('New version not found; nothing to do', 16)
-	Endcase
+    	Do Case
+    		Case m.llNewExists And Not Upper(ccCurrentApp) == Upper(ccAppFileName)
+    			If Messagebox('Install new version of Class Browser?', 3 + 32) = 6
+    				TryToInstall(ccAppFileName, 'replacement for the')
+    			Endif
+    		Case m.llNewExists And Upper(ccCurrentApp) == Upper(ccAppFileName)
+    			If Messagebox('Restore default Class Browser?', 3 + 32) = 6
+    				TryToInstall(ccDefaultApp, 'default')
+    			Endif
+    		Case Not Upper(ccCurrentApp) == Upper(ccDefaultApp)
+    			If Messagebox('New version not found; restore default Class Browser?', 3 + 32) = 6
+    				TryToInstall(ccDefaultApp, 'default')
+    			Endif
+    		Otherwise
+    			Messagebox('New version not found; nothing to do', 16)
+    	Endcase
 
 Endproc
 
