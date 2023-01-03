@@ -1,14 +1,14 @@
 Lparameters toUpdateObject
 Local lcDate, ldDate
 
-ldDate = Date (2023, 01, 07)
+ldDate = Date (2023, 01, 03)
 lcDate = Dtoc(ldDate, 1) 
 
 With m.toUpdateObject
 	.VersionDate      = m.ldDate
-	.VersionNumber    = '1.00.01 - ' + lcDate
+	.VersionNumber    = '1.01 - ' + lcDate
 
-	.AvailableVersion = 'ClassBrowser-1.00.01-update-' + lcDate
+	.AvailableVersion = 'ClassBrowser-1.01-update-' + lcDate
 	.RegisterWithThor = GetRegisterWithThor(.ApplicationName)
 	.Notes			  = GetReleaseNotes()
 Endwith
