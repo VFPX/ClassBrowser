@@ -1,7 +1,7 @@
 Lparameters toUpdateObject
 Local lcDate, ldDate
 
-ldDate = Date (2023, 01, 03)
+ldDate = Date (2023, 01, 07)
 lcDate = Dtoc(ldDate, 1) 
 
 With m.toUpdateObject
@@ -205,8 +205,10 @@ Text to lcNote NoShow
 
 ### 2023-01-07, Version 1.01
 
-* New: If Thor is active, adds classes and class libraries opened into VFP's MRU lists
-* New: Thor tool "Install Class Browser" installs/uninstalls this new version of Class Browser
+#### New: 
+* If Thor is active, adds classes and class libraries opened into VFP's MRU lists.
+* Thor tool "Install Class Browser" installs/uninstalls this new version of Class Browser.
+* Version number appears at upper right corner.
 
 EndText
 

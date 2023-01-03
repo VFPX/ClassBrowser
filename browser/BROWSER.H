@@ -2,7 +2,7 @@
 *
 #INCLUDE "FoxPro.h"
 
-#DEFINE VERSION_NUMBER  			"Ver 1.01 - 2023/01/03"
+#DEFINE VERSION_NUMBER  			"Ver 1.01 - 2023/01/07"
 
 *-- Menu bars and button captions
 #DEFINE B_CLASS_BROWSER_LOC			"\<Class Browser"
