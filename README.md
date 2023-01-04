@@ -11,6 +11,24 @@ The Class Browser displays classes in class libraries or forms and type library 
 
 Class Browser is part of [XSource](https://github.com/VFPX/XSource), the source files for various Visual FoxPro components. The license governing XSource can be found in the XSource_EULA.txt included with all of the XSource releases.
 
+## Installation Instructions (after "Check For Updates" in Thor)
+
+Running "Check For Updates" in Thor downloads the new version of the Class Browser but does not activate it, as a few additional manual steps are required.
+
+* Run Thor tool "Install Class Browser".  This puts the full path of the new version of the Class Browser file into the clipboard and opens up the VFP Options Dialog. 
+
+* Modify the location for Class Browser by pasting in the new location.
+* Click "Set as Default"
+* Click "OK"
+
+![Picture](./docs/images/VFP_Tools_ClassBrowser.APP.png)
+
+### Uninstalling (if necessary)
+
+Running the Thor tool "Install Class Browser" again will present you with the opportunity to uninstall it (using the same directions as above.)
+
+Note that installing/uninstalling here merely changes the pointer in the VFP Options Dialog.
+
 
 ----
 ## Contribution
