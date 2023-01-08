@@ -1,6 +1,0 @@
-
-EndText
-
-Return lcNote
-
-EndProc 

@@ -1,4 +1,4 @@
 appName        = ClassBrowser
 appID          = ClassBrowser
 majorVersion   = 1.01
-versionDATE    = Date (2023, 01, 07) 
+changeLog      = Change Log.md
