@@ -1,12 +1,14 @@
 Lparameters toUpdateObject
 Local lcDate, ldDate
 
-lcDate = '20230108'
+ldDate = Date (2023, 01, 07)
+lcDate = Dtoc(ldDate, 1) 
 
 With m.toUpdateObject
+	.VersionDate      = m.ldDate
 	.VersionNumber    = '1.01 - ' + lcDate
 
-	.AvailableVersion = 'ClassBrowser-1.01-8408-' + lcDate
+	.AvailableVersion = 'ClassBrowser-1.01-update-' + lcDate
 	.RegisterWithThor = GetRegisterWithThor(.ApplicationName)
 	.Notes			  = GetReleaseNotes()
 Endwith
@@ -207,6 +209,7 @@ Text to lcNote NoShow
 * If Thor is active, adds classes and class libraries opened into VFP's MRU lists.
 * Thor tool "Install Class Browser" installs/uninstalls this new version of Class Browser.
 * Version number appears at upper right corner.
+
 EndText
 
 Return lcNote
