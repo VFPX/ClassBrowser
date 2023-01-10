@@ -18,17 +18,14 @@ Here are the steps to updating to a new version:
 1. Make whatever changes are necessary.
 ---
 3. In folder _BuildProcess_:
-   - Edit the majorVersion setting in _Project.txt_
+   - Edit the Version setting in _ProjectSettings.txt_
    - Run Deploy to create the installation files:
-        - `DO Deploy` 
-3. In folder _Browser_
-   - Run FoxBin2Prg to create the text files:
-        - `DO foxbin2prg.prg WITH 'BIN2PRG','*.*'`
+        - `DO Deploy` (**this to be updated soon)**
 3. Update the version and date in the top few lines and at the very bottom of _ReadMe.md_ 
 3. Describe the changes in the top of _Change Log.md_.
 
 ---
-7. Commit
+6. Commit
 8. Push to your fork
 8. Create a pull request
 
