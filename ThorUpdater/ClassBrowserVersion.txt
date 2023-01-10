@@ -1,12 +1,12 @@
 Lparameters toUpdateObject
 Local lcDate, ldDate
 
-lcDate = '20230108'
+lcDate = '20230110'
 
 With m.toUpdateObject
 	.VersionNumber    = '1.01 - ' + lcDate
 
-	.AvailableVersion = 'ClassBrowser-1.01-8408-' + lcDate
+	.AvailableVersion = 'ClassBrowser-1.01-08410-' + lcDate
 	.RegisterWithThor = GetRegisterWithThor(.ApplicationName)
 	.Notes			  = GetReleaseNotes()
 Endwith
