@@ -33,13 +33,13 @@ lcZIPFileURL     = lcDownloadsURL + lcAppID + '.zip'
 
 with toUpdateObject
 	.ApplicationName      = lcAppName
-	.Component            = 'Yes'
+	.Component            = 'No'
 	.VersionLocalFilename = lcAppID + 'VersionFile.txt'
 	.VersionFileURL       = lcVersionFileURL
 	.SourceFileUrl        = lcZIPFileURL
 	.Link                 = lcRepositoryURL
 	.LinkPrompt           = lcAppName + ' Home Page'
-	.ProjectCreationDate  = Date(2023, 1, 7)
+	.ProjectCreationDate  = Date(2023, 1, 13)
 endwith
 return toUpdateObject
 
