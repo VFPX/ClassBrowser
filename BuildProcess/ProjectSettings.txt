@@ -1,4 +1,5 @@
-appName        = ClassBrowser
-appID          = ClassBrowser
-majorVersion   = 1.01
-changeLog      = Change Log.md
+AppName    = ClassBrowser
+AppID      = ClassBrowser
+Version    = 1.01
+ChangeLog  = Change Log.md
+Bin2PRGFolder = Browser

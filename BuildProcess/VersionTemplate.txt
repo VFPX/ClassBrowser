@@ -4,9 +4,9 @@ Local lcDate, ldDate
 lcDate = '{VersionDate}'
 
 With m.toUpdateObject
-	.VersionNumber    = '{MajorVersion} - ' + lcDate
+	.VersionNumber    = '{Version} - ' + lcDate
 
-	.AvailableVersion = '{AppName}-{MajorVersion}-{JULIAN}-' + lcDate
+	.AvailableVersion = '{AppName}-{Version}-{JULIAN}-' + lcDate
 	.RegisterWithThor = GetRegisterWithThor(.ApplicationName)
 	.Notes			  = GetReleaseNotes()
 Endwith

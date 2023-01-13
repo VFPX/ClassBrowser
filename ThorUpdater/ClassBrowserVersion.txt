@@ -1,12 +1,12 @@
 Lparameters toUpdateObject
 Local lcDate, ldDate
 
-lcDate = '20230108'
+lcDate = '20230113'
 
 With m.toUpdateObject
 	.VersionNumber    = '1.01 - ' + lcDate
 
-	.AvailableVersion = 'ClassBrowser-1.01-8408-' + lcDate
+	.AvailableVersion = 'ClassBrowser-1.01-08413-' + lcDate
 	.RegisterWithThor = GetRegisterWithThor(.ApplicationName)
 	.Notes			  = GetReleaseNotes()
 Endwith
@@ -201,7 +201,7 @@ Procedure GetReleaseNotes
 
 Text to lcNote NoShow
 
-### 2023-01-07, Version 1.01
+### 2023-01-13, Version 1.01
 
 #### New: 
 * If Thor is active, adds classes and class libraries opened into VFP's MRU lists.

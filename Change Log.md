@@ -1,5 +1,5 @@
 
-### 2023-01-07, Version 1.01
+### 2023-01-13, Version 1.01
 
 #### New: 
 * If Thor is active, adds classes and class libraries opened into VFP's MRU lists.
