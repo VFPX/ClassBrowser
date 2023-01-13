@@ -34,7 +34,7 @@ lcZIPFileURL     = lcDownloadsURL + lcAppID + '.zip'
 with toUpdateObject
 	.ApplicationName      = lcAppName
 	.Component            = 'Yes'
-	.VersionLocalFilename = lcAppID + 'Version.txt'
+	.VersionLocalFilename = lcAppID + 'VersionFile.txt'
 	.VersionFileURL       = lcVersionFileURL
 	.SourceFileUrl        = lcZIPFileURL
 	.Link                 = lcRepositoryURL

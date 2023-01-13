@@ -6,4 +6,4 @@
 * Thor tool "Install Class Browser" installs/uninstalls this new version of Class Browser.
 * Version number appears at upper right corner.
 
-Last changed: _2023-01-13_ ![Picture](vfpxpoweredby_alternative.gif)
+Last changed: _2023-01-13_ ![Picture](Images/vfpxpoweredby_alternative.gif)
