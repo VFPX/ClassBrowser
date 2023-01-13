@@ -21,7 +21,7 @@ Running "**Check For Updates**" in Thor downloads the new version of the Class B
 * Click "Set as Default"
 * Click "OK"
 
-![Picture](./docs/images/VFP_Tools_ClassBrowser.png)
+![Picture](VFP_Tools_ClassBrowser.png)
 
 ### Uninstalling (if necessary)
 
@@ -34,4 +34,4 @@ Note that installing/uninstalling here merely changes the pointer in the VFP Opt
 ## Contribution
 See [contribution](./.github/CONTRIBUTING.md)
 
-Last changed: _2023-01-13_ ![Picture](./docs/images/vfpxpoweredby_alternative.gif)
+Last changed: _2023-01-13_ ![Picture](vfpxpoweredby_alternative.gif)
