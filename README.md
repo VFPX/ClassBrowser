@@ -21,7 +21,7 @@ Running "**Check For Updates**" in Thor downloads the new version of the Class B
 * Click "Set as Default"
 * Click "OK"
 
-![Picture](./docs/images/VFP_Tools_ClassBrowser.APP.png)
+![Picture](./docs/images/VFP_Tools_ClassBrowser.png)
 
 ### Uninstalling (if necessary)
 
