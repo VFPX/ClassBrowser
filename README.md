@@ -1,6 +1,6 @@
 # Class Browser
 
-Version 1.01 Released 2023-01-07
+Version 1.01 Released 2023-01-13
 
 [What's new in this release](Change%20Log.md)
 
@@ -13,9 +13,9 @@ Class Browser is part of [XSource](https://github.com/VFPX/XSource), the source 
 
 ## Installation Instructions (after "Check For Updates" in Thor)
 
-Running "Check For Updates" in Thor downloads the new version of the Class Browser but does not activate it, as a few additional manual steps are required.
+Running "**Check For Updates**" in Thor downloads the new version of the Class Browser but does not activate it, as a few additional manual steps are required.
 
-* Run Thor tool "Install Class Browser".  This puts the full path of the new version of the Class Browser file into the clipboard and opens up the VFP Options Dialog. 
+* Run Thor tool "**Install Class Browser**".  This puts the full path of the new version of the Class Browser file into the clipboard and opens up the VFP Options Dialog. 
 
 * Modify the location for Class Browser by pasting in the new location.
 * Click "Set as Default"
@@ -25,7 +25,7 @@ Running "Check For Updates" in Thor downloads the new version of the Class Brows
 
 ### Uninstalling (if necessary)
 
-Running the Thor tool "Install Class Browser" again will present you with the opportunity to uninstall it (using the same directions as above.)
+Running the Thor tool "**Install Class Browser**" again will present you with the opportunity to uninstall it (using the same directions as above.)
 
 Note that installing/uninstalling here merely changes the pointer in the VFP Options Dialog.
 
@@ -34,4 +34,4 @@ Note that installing/uninstalling here merely changes the pointer in the VFP Opt
 ## Contribution
 See [contribution](./.github/CONTRIBUTING.md)
 
-Last changed: _2023-01-07 ![Picture](./docs/images/vfpxpoweredby_alternative.gif)
+Last changed: _2023-01-13_ ![Picture](./docs/images/vfpxpoweredby_alternative.gif)
