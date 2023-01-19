@@ -39,7 +39,7 @@ with toUpdateObject
 	.SourceFileUrl        = lcZIPFileURL
 	.Link                 = lcRepositoryURL
 	.LinkPrompt           = lcAppName + ' Home Page'
-	.ProjectCreationDate  = Date(2023, 1, 7)
+	.ProjectCreationDate  = Date(2023, 1, 13)
 endwith
 return toUpdateObject
 

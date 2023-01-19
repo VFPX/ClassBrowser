@@ -31,7 +31,8 @@ Note that installing/uninstalling here merely changes the pointer in the VFP Opt
 
 
 ----
-## Contribution
-See [contribution](./.github/CONTRIBUTING.md)
+## Helping with this project
+See [How to contribute to Class Browser](.github/CONTRIBUTING.md) for details on how to help with this project.
+
 
 Last changed: _2023-01-13_ ![Picture](Images/vfpxpoweredby_alternative.gif)
