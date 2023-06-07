@@ -6,7 +6,6 @@ Version 1.01 Released 2023-01-13
 
 ***
 
-
 The Class Browser displays classes in class libraries or forms and type library information in a type library (.tlb), object library (.olb), or executable (.exe) file. You can use the Class Browser to view, use, and manage classes and their user-defined members.
 
 Class Browser is part of [XSource](https://github.com/VFPX/XSource), the source files for various Visual FoxPro components. The license governing XSource can be found in the XSource_EULA.txt included with all of the XSource releases.
@@ -29,6 +28,10 @@ Running the Thor tool "**Install Class Browser**" again will present you with th
 
 Note that installing/uninstalling here merely changes the pointer in the VFP Options Dialog.
 
+----
+### Video
+
+Ken Levy, the author of the Class Browser, has generously agreed to open source his [video on using the Class Browser](https://vfphelp.com/download/classbrowser_vfp.mp4).
 
 ----
 ## Helping with this project
